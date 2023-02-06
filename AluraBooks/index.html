@@ -1,56 +1,60 @@
-<!DOCTYPE html>
+<!DOCTYPE html>                                                                <!--Declarando o tipo de documento: html-->
 
 <html>
 
     <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, intial-scale=1.0">
-        <title>AluraBooks</title>
-        <link rel="stylesheet" href="reset.css">
-        <link rel="stylesheet" href="styles.css">
+        <meta charset="UTF-8">                                                <!--Utilizada para comunicar aos navegadores qual é o formato de codificação de caracteres utilizado-->
+        <meta name="viewport" content="width=device-width, intial-scale=1.0"> <!--Definimos o viewport c/ a largura do dispositivo e o nivel de zoom de 100%-->
+        <title>AluraBooks</title>                                             <!--Titulo que aparece na aba-->
+        <link rel="stylesheet" href="reset.css">                              <!--Resetando pré-definições-->
+        <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles.css">                             <!--Declarando local da pasta styles-->
+                                   
     </head>
 
-        <header class="cabeçalho">
-            <div class="container">
-                <input type="checkbox" id="menu" class="container__botao">
-                <label for="menu">    
-                    <span class="cabeçalho__menu-hamburger container__imagem"></span>
+        <header class="cabeçalho">                                            <!--Header significa o início de nosso cabeçalho-->
+            <div class="container">                                           <!--divisão com classe = container para que possa agrupar e ajustar melhor o botão e logo-->                                 
+                <input type="checkbox" id="menu" class="container__botao">    <!--caixa de chackbox, com identificador "menu" e classe "container__botao"--> 
+                <label for="menu">                                            <!--É o atributo de entrada para qual o <label> se destinam, sua identificação "menu" tem que se igual ao id do imput-->
+                    <span class="cabeçalho__menu-hamburger container__imagem"></span>   <!--é um conteiner generico em linha para conteúdo fraseado , que não representa nada por natureza-->
                 </label>
-                <ul class="lista-menu">
-                    <li class="lista-menu__titulo">Categorias</li>
+                <ul class="lista-menu">                                         <!--Unorder list (lista desordenada)-->
+                    <li class="lista-menu__titulo">Categorias</li>              <!--List Item (Item da lista)-->
                     <li class="lista-menu__item">
-                        <a href="#"class="lista-menu__item">Programação</a>
+                        <a href="#"class="lista-menu__link">Programação</a>     <!--Ancoramos um link com o nome de "programação"-->
                     </li>
                     <li class="lista-menu__item">
-                        <a href="#"class="lista-menu__item">Front-End</a>
+                        <a href="#"class="lista-menu__link">Front-End</a>        <!--Ancoramos um link com o nome de "front-end"-->
                     </li>
                     <li class="lista-menu__item">
-                        <a href="#"class="lista-menu__item">Infraestrutura</a>
+                        <a href="#"class="lista-menu__link">Infraestrutura</a>   <!--Ancoramos um link com o nome de "Infraestrutura"-->
                     </li>
                     <li class="lista-menu__item">
-                        <a href="#"class="lista-menu__item">Business</a>
+                        <a href="#"class="lista-menu__link">Business</a>          <!--Ancoramos um link com o nome de "Business"-->
                     </li>
                     <li class="lista-menu__item">
-                        <a href="#"class="lista-menu__item">Design & UX</a>
+                        <a href="#"class="lista-menu__link">Design & UX</a>        <!--Ancoramos um link com o nome de "Design & UX"-->
                     </li>
 
                 </ul>
-                <img src="img/Logo.svg" alt="Logo da AluraBooks" class="container__imagem">
+                <img src="img/Logo.svg" alt="Logo da AluraBooks" class="container__imagem">  <!--Logo do e-commerce-->   
             </div>
-            <div class="container">
+            <div class="container">                                                            <!--Segundo Container que colocamos os icones Favoritos, Carrinho de compras e Perfil -->
                 <a href="https://www.figma.com/file/sSMbIqKaGBd66Y8roxTk2p/AluraBooks?node-id=113%3A1553"><img src="img/Favoritos.svg" alt="Meus Favoritos" class="container__imagem"></a>
                 <a href="#"><img src="img/Compras.svg" alt="Carrinho de Compras" class="container__imagem"></a>
                 <a href="#"><img src="img/Usuário.svg" alt="Meu Perfil" class="container__imagem"></a>
             </div>
         </header>
-
+            
+        <section class="banner">
+            <h2 class="banner__titulo">Já sabe por onde começar?</h2>
+            <p class="banner__texto">Encontre em nossa estante o que precisa para seu desenvolvimento!</p>
+            <input type="search" class="banner__pesquisa" placeholder="Qual será sua próxima leitura?">
+            
+        </section>
 
 
 
      </head>
 
-    <body>
-        
-    
-    </body>
 </html>
