@@ -1,0 +1,45 @@
+.carrossel__titulo{
+    color: var(--laranja);
+    font-size: 18px;
+    text-align: center;
+    font-weight: 700;
+    padding: 1em;
+    line-height: 1em;
+}
+
+.swiper-pagination{
+    position: relative ;
+}
+
+.swiper-slide img{
+    width: 70%;
+}
+
+.swiper-button-prev,
+.swiper-button-next{
+    display: none;
+}
+
+
+.card{
+    text-align: center;
+    display: flex;
+    line-height: 1em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+    @media screen and (max-width: 480px){
+        .swiper-slide img{
+            width: 100%;
+        }
+    }

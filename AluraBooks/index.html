@@ -8,6 +8,7 @@
         <title>AluraBooks</title>                                             <!--Titulo que aparece na aba-->
         <link rel="stylesheet" href="reset.css">                              <!--Resetando pré-definições-->
         <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
         <link rel="stylesheet" href="styles.css">                             <!--Declarando local da pasta styles-->
                                    
     </head>
@@ -45,16 +46,69 @@
                 <a href="#"><img src="img/Usuário.svg" alt="Meu Perfil" class="container__imagem"></a>
             </div>
         </header>
-            
-        <section class="banner">
-            <h2 class="banner__titulo">Já sabe por onde começar?</h2>
-            <p class="banner__texto">Encontre em nossa estante o que precisa para seu desenvolvimento!</p>
-            <input type="search" class="banner__pesquisa" placeholder="Qual será sua próxima leitura?">
-            
-        </section>
+        <body>
+            <section class="banner">
+                <h2 class="banner__titulo">Já sabe por onde começar?</h2>
+                <p class="banner__texto">Encontre em nossa estante o que precisa para seu desenvolvimento!</p>
+                <input type="search" class="banner__pesquisa" placeholder="Qual será sua próxima leitura?">
+            </section>
+
+            <section class="carrossel">
+                <h2 class="carrossel__titulo">Novos Lançamentos</h2>
+
+                     <!-- If we need pagination -->
+                        <div class="swiper-pagination"></div>
+
+                        <div class="swiper">
+
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide"><img src="/img/Portugol.svg" alt="Imagem Livro Portugol"></div>
+                        <div class="swiper-slide"><img src="/img/Javascript.svg" alt="Imagem Livro JavaScript"></div>
+                        <div class="swiper-slide"><img src="/img/Arquitetura.svg" alt="Imagem Livro Arquitetura de software distribuido"></div>
+                        <div class="swiper-slide"><img src="/img/Nodejs.svg" alt="Imagem Livro Node.JS"></div>
+                        <div class="swiper-slide"><img src="/img/ReactNative.svg" alt="Imagem Livro ReactiveNative"></div>
+                        <div class="swiper-slide"><img src="/img/Tuning.svg" alt="Imagem Livro Tunning"></div>
+                        <div class="swiper-slide"><img src="/img/ApacheKafka.svg" alt="Imagem Livro ApacheKafta"></div>
+                        <div class="swiper-slide"><img src="/img/Construct2.svg" alt="Imagem Livro Construct2"></div>
+                        <div class="swiper-slide"><img src="/img/Gestão2.svg" alt="Imagem Livro Gestão de Produtos"></div>
+                        
+                        </div>
+                        <!-- If we need navigation buttons -->
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                    </div>
+            </section>
+
+            <section class="card">
+                <div class="card__titulo"> Talvez você também possa se interessar por...</div>
+                <div class="card__subtitulo"> Angular 11 e Firebase</div>
+                <div class="card__descricao"> Construindo uma aplicaçãoi integrada do Google</div>
+                <div class="card__imagem"><img src="/img/angular-img.svg"></div>   
+                <div class="card__itens">
+                    <img src="/img/Favoritos.svg" alt="Icone Favoritos">
+                    <img src="/img/Compras.svg" alt="Icone Carrinho de compras">
+                </div>
+
+                <a class="card__botao">Saiba Mais</a>
 
 
+            </section>
+        
 
-     </head>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+        <script>
+            const swiper = new Swiper('.swiper', {
+                spaceBetween: 10,
+                slidesPerView: 3,
+                pagination: {
+                    el: '.swiper-pagination',
+                    type: 'bullets',
+            },
+          });
+        </script>
+
+    </body>
 
 </html>
