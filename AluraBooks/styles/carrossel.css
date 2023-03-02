@@ -20,24 +20,6 @@
     display: none;
 }
 
-
-.card{
-    text-align: center;
-    display: flex;
-    line-height: 1em;
-}
-
-
-
-
-
-
-
-
-
-
-
-
     @media screen and (max-width: 480px){
         .swiper-slide img{
             width: 100%;
