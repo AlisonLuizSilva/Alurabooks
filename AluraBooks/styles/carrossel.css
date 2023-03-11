@@ -9,6 +9,7 @@
 
 .swiper-pagination{
     position: relative ;
+    padding: 1em 0;
 }
 
 .swiper-slide img{

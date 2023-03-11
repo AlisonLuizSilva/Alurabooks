@@ -1,46 +1,45 @@
-<!DOCTYPE html>                                                                <!--Declarando o tipo de documento: html-->
-
+<!DOCTYPE html>                                                                
 <html>
 
     <head>
-        <meta charset="UTF-8">                                                <!--Utilizada para comunicar aos navegadores qual é o formato de codificação de caracteres utilizado-->
-        <meta name="viewport" content="width=device-width, intial-scale=1.0"> <!--Definimos o viewport c/ a largura do dispositivo e o nivel de zoom de 100%-->
-        <title>AluraBooks</title>                                             <!--Titulo que aparece na aba-->
-        <link rel="stylesheet" href="reset.css">                              <!--Resetando pré-definições-->
+        <meta charset="UTF-8">                                               
+        <meta name="viewport" content="width=device-width, intial-scale=1.0"> 
+        <title>AluraBooks</title>                                             
+        <link rel="stylesheet" href="reset.css">                              
         <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
-        <link rel="stylesheet" href="styles.css">                             <!--Declarando local da pasta styles-->
+        <link rel="stylesheet" href="styles.css">                             
                                    
     </head>
 
-        <header class="cabeçalho">                                            <!--Header significa o início de nosso cabeçalho-->
-            <div class="container">                                           <!--divisão com classe = container para que possa agrupar e ajustar melhor o botão e logo-->                                 
-                <input type="checkbox" id="menu" class="container__botao">    <!--caixa de chackbox, com identificador "menu" e classe "container__botao"--> 
-                <label for="menu">                                            <!--É o atributo de entrada para qual o <label> se destinam, sua identificação "menu" tem que se igual ao id do imput-->
-                    <span class="cabeçalho__menu-hamburger container__imagem"></span>   <!--é um conteiner generico em linha para conteúdo fraseado , que não representa nada por natureza-->
+        <header class="cabeçalho">                                            
+            <div class="container">                                                              
+                <input type="checkbox" id="menu" class="container__botao">     
+                <label for="menu">                                           
+                    <span class="cabeçalho__menu-hamburger container__imagem"></span>   
                 </label>
-                <ul class="lista-menu">                                         <!--Unorder list (lista desordenada)-->
-                    <li class="lista-menu__titulo">Categorias</li>              <!--List Item (Item da lista)-->
+                <ul class="lista-menu">                                       
+                    <li class="lista-menu__titulo">Categorias</li>              
                     <li class="lista-menu__item">
-                        <a href="#"class="lista-menu__link">Programação</a>     <!--Ancoramos um link com o nome de "programação"-->
+                        <a href="#"class="lista-menu__link">Programação</a>    
                     </li>
                     <li class="lista-menu__item">
-                        <a href="#"class="lista-menu__link">Front-End</a>        <!--Ancoramos um link com o nome de "front-end"-->
+                        <a href="#"class="lista-menu__link">Front-End</a>      
                     </li>
                     <li class="lista-menu__item">
-                        <a href="#"class="lista-menu__link">Infraestrutura</a>   <!--Ancoramos um link com o nome de "Infraestrutura"-->
+                        <a href="#"class="lista-menu__link">Infraestrutura</a>   
                     </li>
                     <li class="lista-menu__item">
-                        <a href="#"class="lista-menu__link">Business</a>          <!--Ancoramos um link com o nome de "Business"-->
+                        <a href="#"class="lista-menu__link">Business</a>          
                     </li>
                     <li class="lista-menu__item">
-                        <a href="#"class="lista-menu__link">Design & UX</a>        <!--Ancoramos um link com o nome de "Design & UX"-->
+                        <a href="#"class="lista-menu__link">Design & UX</a>        
                     </li>
 
                 </ul>
-                <img src="img/Logo.svg" alt="Logo da AluraBooks" class="container__imagem">  <!--Logo do e-commerce-->   
+                <img src="img/Logo.svg" alt="Logo da AluraBooks" class="container__imagem">     
             </div>
-            <div class="container">                                                            <!--Segundo Container que colocamos os icones Favoritos, Carrinho de compras e Perfil -->
+            <div class="container">                                                            
                 <a href="https://www.figma.com/file/sSMbIqKaGBd66Y8roxTk2p/AluraBooks?node-id=113%3A1553"><img src="img/Favoritos.svg" alt="Meus Favoritos" class="container__imagem"></a>
                 <a href="#"><img src="img/Compras.svg" alt="Carrinho de Compras" class="container__imagem"></a>
                 <a href="#"><img src="img/Usuário.svg" alt="Meu Perfil" class="container__imagem"></a>
@@ -55,12 +54,9 @@
 
             <section class="carrossel">
                 <h2 class="carrossel__titulo">Novos Lançamentos</h2>
-
-                     <!-- If we need pagination -->
-                        <div class="swiper-pagination"></div>
-
                         <div class="swiper">
-
+                        <!-- If we need pagination -->
+                        <div class="swiper-pagination"></div>    
                         <!-- Additional required wrapper -->
                         <div class="swiper-wrapper">
                         <!-- Slides -->
@@ -82,24 +78,59 @@
             </section>
 
             <div class="card">
-               
+            <!--1ª Linha-->
                 <div class="card__descricao">
-                
+            <!--1ª COLUNA-->
                     <div class="descricao"> 
-                        <h2 class="descricao__titulo">Talvez você também possa se interessar por...</h2>
-                        <h3 class="descricao__titulo-livro">Angular 11 e Firebase</h3>
+                        <h3 class="descricao__titulo">Talvez você também possa se interessar por...</h3>
+                        <h2 class="descricao__titulo-livro">Angular 11 e Firebase</h2>
                         <p class="descricao__texto">Construindo uma aplicação integrada vom a plataforma do Google</p> 
-                    </div>
-                        <img src="/img/angular-img.svg" class="descricao__imagem" alt="Imagem Angular"> <!--2ª coluna-->
-                    </div>
+                </div>
+            <!--2ªCOLUNA-->
+                    <img src="/img/angular-img.svg" class="descricao__imagem" alt="Imagem Angular"> 
+            </div>
+
+            <!--2ª Linha-->
                 <div class="card__botoes">
+            <!--1ª COLUNA-->
                     <ul class="botoes">
                         <li class="botoes__item"><img src="/img/Favoritos.svg" alt="Imagem Favoritos"></li>
                         <li class="botoes__item"><img src="/img/Compras.svg" alt="Imagem Carrinho de Compras"></li>
                     </ul>
-                
-                    <a href="botoes__ancora" id="botoes__ancora">Saiba Mais</a>
+            <!--2ª COLUNA-->
+                    <a href="#" class="botoes__ancora">Saiba Mais!</a>
+                 </div>
+            </div>
+
+            <section class="carrosel">
+                <h2 class="carrossel__titulo">Mais vendidos</h2>
+                <!-- Slider main container -->
+                <div class="swiper">
+                <!-- Additional required wrapper -->
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide"><img src="/img/Javascript.svg" alt="Imagem Livro JavaScript"></div>
+                    <div class="swiper-slide"><img src="/img/Arquitetura.svg" alt="Imagem Livro Arquitetura de software distribuido"></div>
+                    <div class="swiper-slide"><img src="/img/Nodejs.svg" alt="Imagem Livro Node.JS"></div>
+                    <div class="swiper-slide"><img src="/img/ReactNative.svg" alt="Imagem Livro ReactiveNative"></div>
                 </div>
+
+
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+
+
+
+
+
+
+
+
+
+            </section>
 
         
 
