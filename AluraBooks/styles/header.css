@@ -13,18 +13,19 @@
     display: flex;                                  /*o display flex serve para alinharmos nossos itens lado a lado*/
     justify-content: space-between;                 /*Cria espaç=entre elements mant o 1º grudado no início, últ final*/
     align-items: center;                            /*alinha os itens no centro*/
-    position: relative                              /* o elemento é posicionado em relação a si mesmo*/
+    position: relative;                              /* o elemento é posicionado em relação a si mesmo*/
 
 }
 
 
 .container{
     display:flex;                                   /*o display flex serve para alinharmos nossos itens lado a lado*/
-    align-items: center;                            /*alinha os itens no centro*/ 
+    align-items: center;
+    margin:1em;                                              
 }
 
 .container__imagem{
-    padding: 1em                    
+    margin: 0.5em;                    
     
 }
 
@@ -36,7 +37,7 @@
 }
 
 .container__botao:checked ~ .lista-menu{
-    display: block                          /*display:bloqueado*/
+    display: block;                          /*display:bloqueado*/
 }
 
 .lista-menu__titulo, .lista-menu__item{

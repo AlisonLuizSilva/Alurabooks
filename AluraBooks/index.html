@@ -3,7 +3,7 @@
 
     <head>
         <meta charset="UTF-8">                                               
-        <meta name="viewport" content="width=device-width, intial-scale=1.0"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
         <title>AluraBooks</title>                                             
         <link rel="stylesheet" href="reset.css">                              
         <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
@@ -53,7 +53,7 @@
             </section>
 
             <section class="carrossel">
-                <h2 class="carrossel__titulo">Novos Lançamentos</h2>
+                <h2 class="carrossel__titulo">Últimos Lançamentos</h2>
                         <div class="swiper">
                         <!-- If we need pagination -->
                         <div class="swiper-pagination"></div>    
@@ -126,6 +126,13 @@
             <div class="card">
                 <div class="card__descricao">
                     <div class="descricao">
+                            <div class="estrelas">
+                                <img src="/img/Star.svg" alt="Estrela 1">
+                                <img src="/img/Star.svg" alt="Estrela 2">
+                                <img src="/img/Star.svg" alt="Estrela 3">
+                                <img src="/img/Star.svg" alt="Estrela 4">
+                                <img src="/img/Star.svg" alt="Estrela 5">
+                            </div>
                         <h3 class="descricao__titulo">Autora do Mês</h3>
                         <h2 class="descricao__titulo-livro">Juliana Agarikov</h2>
                         <p class="descricao__texto">Analista de sistemas e escritora, Juliana é especialista em Front-End</p>
@@ -173,6 +180,17 @@
                     </ul>
                 </div>
             </section>
+
+            <div class="novidades">
+                <h2 class="titulo__novidades">Fique atento nas novidades!</h2>
+                <p class="descricao__novidades">Atualizações de e-books, novos livros, promoções e outros.</p>
+
+                <input type="search" class="banner__pesquisa-novidades" placeholder="Cadastre seu e-mail">
+            </div>
+
+            <footer>
+                <h2 class="titulo__footer">Grupo Alura</h2>
+            </footer>
 
 
         <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>

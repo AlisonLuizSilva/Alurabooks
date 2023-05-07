@@ -1,0 +1,42 @@
+.novidades{
+    background-color: var(--branco);
+    padding: 2em;
+
+}
+
+.titulo__novidades{
+    font-size: 18px;
+    color: var(--azul-escuro);
+    line-height: 27px;
+    font-weight: 500;
+    text-align: left;
+    margin: 1em;
+}
+
+.descricao__novidades{
+    font-size: 16px;
+    color: var(--azul-escuro);
+    line-height: 24px;
+    font-weight: 300;
+    margin: 1em;
+}
+
+.banner__pesquisa-novidades{
+    background-color: transparent;
+    border: 1px solid var(--azul-escuro);
+    border-radius: 24px;
+    padding: 1em;
+    margin: 0 20px 0 20px;
+    width: 90%;
+    
+}
+.banner__pesquisa-novidades::placeholder{
+    background: url(/img/email-logo.svg) no-repeat;
+    background-position: left;
+    color: var(--azul-escuro);
+    font-family: poppins;
+    font-size: 16px;
+    text-align: center;
+}
+
+    
