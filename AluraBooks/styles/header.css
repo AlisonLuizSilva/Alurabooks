@@ -1,65 +1,108 @@
 .cabeçalho__menu-hamburger {
     width: 24px;
     height: 24px;
-    background-image: url("../img/Menu.svg");       /*os (..) servem para buscar a imagem no diretório correto*/
-    background-repeat: no-repeat;                   /*serve para não repetir a imagem .svg do menu hamburger*/
-    background-position: center;                    /*serv p .svg menu hamburger ficar centralizada em rel ao container */
+    background-image: url("../img/Menu.svg");       
+    background-repeat: no-repeat;                   
+    background-position: center;                    
     display: inline-block;
 
 }
 
 .cabeçalho {
-    background-color: var(--branco);                /*cor do cabeçalho branco visto que o body está em #EBECEE*/
-    display: flex;                                  /*o display flex serve para alinharmos nossos itens lado a lado*/
-    justify-content: space-between;                 /*Cria espaç=entre elements mant o 1º grudado no início, últ final*/
-    align-items: center;                            /*alinha os itens no centro*/
-    position: relative;                              /* o elemento é posicionado em relação a si mesmo*/
+    background-color: var(--branco);                
+    display: flex;                                  
+    justify-content: space-between;                 
+    align-items: center;                           
+    position: relative;                            
 
 }
 
 
 .container{
-    display:flex;                                   /*o display flex serve para alinharmos nossos itens lado a lado*/
+    display:flex;                                  
     align-items: center;
     margin:1em;                                              
 }
 
 .container__imagem{
-    margin: 0.5em;                    
+    margin: 0 0.5em;                    
     
 }
 
 .lista-menu{
     display: none;
-    position: absolute;                     /*posição relacionada a de seu elemento pai*/
+    position: absolute;                    
     top: 100%;
-    width: 60vw;                            /*Aumento do tam do menu c a medida vw (Viewport-width) calcula 60% tam da tela*/
+    width: 60vw;                            
 }
 
 .container__botao:checked ~ .lista-menu{
-    display: block;                          /*display:bloqueado*/
+    display: block;                          
 }
 
 .lista-menu__titulo, .lista-menu__item{
-    padding: 1em;                           /*espaçamento interno proporcional a 1 proporcional*/
-    background-color: var(--branco);        /*Variavel da cor branca*/
+    padding: 1em;                           
+    background-color: var(--branco);        
 
 
 }
 
 .lista-menu__titulo{
-    color: var(--laranja);                  /*Variavel da cor laranja*/
+    color: var(--laranja);                  
     font-weight: 700;                 
 }
 
 .lista-menu__link{
-    background: var(--azul-degrade);        /*Variavel da cor azul degradê*/
-    -webkit-background-clip: text;          /*Serve para funcionar em outros tipos de navegadores*/
-    -webkit-text-fill-color: transparent;   /*Serve para funcionar em outros tipos de navegadores*/
-    background-clip: text;                  /*prender so onde tem texto*/          
-    text-transform: uppercase;              /*Serve para colocar em maiusculo o texto*/
+    background: var(--azul-degrade);        
+    -webkit-background-clip: text;          
+    -webkit-text-fill-color: transparent;   
+    background-clip: text;                  
+    text-transform: uppercase;              
 }
 
 .container__botao{
-    display: none;                          /*Ocultamos o botão Checkbox*/
+    display: none;  
+}                        
+
+.logo__nome-a, .logo__nome-b, .lista__menu-1024{
+    display: none;
 }
+
+    @media screen and (min-width:1024px){
+        .logo__nome-a{
+            display: inline-block;
+            font-family: josefin sans;
+            font-size: 30px;
+            font-weight: 700;
+            line-height: 24px;
+            text-align: center;
+            
+        }
+
+        .logo__nome-b{
+            display: inline-block;
+            font-family: josefin sans;
+            font-size: 30px;
+            font-weight: 400;
+            line-height: 24px;
+            text-align: center;
+        }
+
+        #icone__favoritos, .cabeçalho__menu-hamburger{
+            display: none;
+        }
+
+        .lista__menu-1024{
+            display: block;
+        }
+
+        .container__categorias-1024 ~ .lista__menu-1024{
+            display:block;
+        }
+
+
+
+
+        
+        
+    }

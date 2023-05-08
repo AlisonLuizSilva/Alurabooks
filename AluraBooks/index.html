@@ -7,6 +7,7 @@
         <title>AluraBooks</title>                                             
         <link rel="stylesheet" href="reset.css">                              
         <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
         <link rel="stylesheet" href="styles.css">                             
                                    
@@ -16,7 +17,7 @@
             <div class="container">                                                              
                 <input type="checkbox" id="menu" class="container__botao">     
                 <label for="menu">                                           
-                    <span class="cabeçalho__menu-hamburger container__imagem"></span>   
+                    <span class="cabeçalho__menu-hamburger container__imagem"></span>
                 </label>
                 <ul class="lista-menu">                                       
                     <li class="lista-menu__titulo">Categorias</li>              
@@ -37,10 +38,22 @@
                     </li>
 
                 </ul>
-                <img src="img/Logo.svg" alt="Logo da AluraBooks" class="container__imagem">     
+                <img src="img/Logo.svg" alt="Logo da AluraBooks" class="container__imagem"><div class="logo__nome-a">Alura<div class="logo__nome-b">books</div></div>    
             </div>
+
+            <div class="menu-1024">
+                <input type="checkbox" id="categorias" class="container__categorias-1024">     
+                <label for="categorias" class="lista-menu__link-1024">Categorias</label>
+
+                <input type="checkbox" id="favoritos" class="container__favoritos-1024">
+                <label for="favoritos" class="lista-menu-1024">Favoritos</label>
+
+                <input type="checkbox" id="minha_estante" class="container__minha_estante-1024">
+                <label for="minha_estante" class="lista-menu-1024">Minha Estante</label> 
+            </div>
+
             <div class="container">                                                            
-                <a href="https://www.figma.com/file/sSMbIqKaGBd66Y8roxTk2p/AluraBooks?node-id=113%3A1553"><img src="img/Favoritos.svg" alt="Meus Favoritos" class="container__imagem"></a>
+                <a href="https://www.figma.com/file/sSMbIqKaGBd66Y8roxTk2p/AluraBooks?node-id=113%3A1553"><img src="img/Favoritos.svg" alt="Meus Favoritos" class="container__imagem" id="icone__favoritos"></a>
                 <a href="#"><img src="img/Compras.svg" alt="Carrinho de Compras" class="container__imagem"></a>
                 <a href="#"><img src="img/Usuário.svg" alt="Meu Perfil" class="container__imagem"></a>
             </div>
