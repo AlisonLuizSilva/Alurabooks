@@ -24,8 +24,9 @@
     display: none;
 }
 
-    @media screen and (max-width: 480px){
+    @media screen and (min-width: 480px){
         .swiper-slide img{
-            width: 100%;
+            width: 55%;
+            margin: 3em 20% 0 20%;
         }
     }

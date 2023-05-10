@@ -107,7 +107,7 @@
             margin: 1em;
         }
 
-        .tablet__container-botao{
+        .tablet__container-botao, .cabeçalho__menu-hamburger{
             display: none;
         }
 

@@ -47,7 +47,6 @@
                     <label for="categorias">
                         <li class="tablet__menu-link">Categorias</li>
                     </label>
-                    
                         <ul class="lista-menu">                                                 
                             <li class="lista-menu__item">
                                 <a href="#"class="lista-menu__link">Programação</a>    
@@ -64,7 +63,6 @@
                             <li class="lista-menu__item">
                                 <a href="#"class="lista-menu__link">Design & UX</a>        
                             </li>
-        
                         </ul>
 
 
@@ -120,29 +118,31 @@
                     </div>
             </section>
 
-            <div class="card">
-            <!--1ª Linha-->
-                <div class="card__descricao">
-            <!--1ª COLUNA-->
-                    <div class="descricao"> 
-                        <h3 class="descricao__titulo">Talvez você também possa se interessar por...</h3>
-                        <h2 class="descricao__titulo-livro">Angular 11 e Firebase</h2>
-                        <p class="descricao__texto">Construindo uma aplicação integrada vom a plataforma do Google</p> 
+            <div class="container__card">
+                <div class="card">
+                <!--1ª Linha-->
+                    <div class="card__descricao">
+                <!--1ª COLUNA-->
+                        <div class="descricao"> 
+                            <h3 class="descricao__titulo">Talvez você também possa se interessar por...</h3>
+                            <h2 class="descricao__titulo-livro">Angular 11 e Firebase</h2>
+                            <p class="descricao__texto">Construindo uma aplicação integrada vom a plataforma do Google</p> 
+                    </div>
+                <!--2ªCOLUNA-->
+                        <img src="/img/angular-img.svg" class="descricao__imagem" alt="Imagem Angular"> 
                 </div>
-            <!--2ªCOLUNA-->
-                    <img src="/img/angular-img.svg" class="descricao__imagem" alt="Imagem Angular"> 
-            </div>
 
-            <!--2ª Linha-->
-                <div class="card__botoes">
-            <!--1ª COLUNA-->
-                    <ul class="botoes">
-                        <li class="botoes__item"><img src="/img/Favoritos.svg" alt="Imagem Favoritos"></li>
-                        <li class="botoes__item"><img src="/img/Compras.svg" alt="Imagem Carrinho de Compras"></li>
-                    </ul>
-            <!--2ª COLUNA-->
-                    <a href="#" class="botoes__ancora">Saiba Mais!</a>
-                 </div>
+                <!--2ª Linha-->
+                    <div class="card__botoes">
+                <!--1ª COLUNA-->
+                        <ul class="botoes">
+                            <li class="botoes__item"><img src="/img/Favoritos.svg" alt="Imagem Favoritos"></li>
+                            <li class="botoes__item"><img src="/img/Compras.svg" alt="Imagem Carrinho de Compras"></li>
+                        </ul>
+                <!--2ª COLUNA-->
+                        <a href="#" class="botoes__ancora">Saiba Mais!</a>
+                    </div>
+                </div>
             </div>
 
             <section class="carrosel">
@@ -166,9 +166,10 @@
                 <div class="swiper-button-next"></div>
             </section>
             
-            <div class="card">
-                <div class="card__descricao">
-                    <div class="descricao">
+            <div class="container__card">
+                <div class="card">
+                    <div class="card__descricao">
+                        <div class="descricao">
                             <div class="estrelas">
                                 <img src="/img/Star.svg" alt="Estrela 1">
                                 <img src="/img/Star.svg" alt="Estrela 2">
@@ -176,18 +177,19 @@
                                 <img src="/img/Star.svg" alt="Estrela 4">
                                 <img src="/img/Star.svg" alt="Estrela 5">
                             </div>
-                        <h3 class="descricao__titulo">Autora do Mês</h3>
-                        <h2 class="descricao__titulo-livro">Juliana Agarikov</h2>
-                        <p class="descricao__texto">Analista de sistemas e escritora, Juliana é especialista em Front-End</p>
+                            <h3 class="descricao__titulo">Autora do Mês</h3>
+                            <h2 class="descricao__titulo-livro">Juliana Agarikov</h2>
+                            <p class="descricao__texto">Analista de sistemas e escritora, Juliana é especialista em Front-End</p>
+                        </div>
+                        <img class="container__imagem" src="/img/Perfil-escritora 1.svg" alt="Foto da Escritora"> 
                     </div>
-                    <img class="container__imagem" src="/img/Perfil-escritora 1.svg" alt="Foto da Escritora"> 
-                </div>
-                <div class="card__botoes">
-                    <ul classs="botoes" id="botoes">
-                        <li class="botoes__item" id="teste_botoes-item"><img src="/img/Favoritos.svg" alt="Imagem Favoritos"></li>
-                        <li class="botoes__item" id="teste_botoes-item"><img src="/img/Compras.svg" alt="Imagem Carrinho de Compras"></li> 
-                    </ul>
-                        <a href="#" class="botoes__ancora">Saiba Mais</a>
+                    <div class="card__botoes">
+                        <ul classs="botoes" id="botoes">
+                            <li class="botoes__item" id="teste_botoes-item"><img src="/img/Favoritos.svg" alt="Imagem Favoritos"></li>
+                            <li class="botoes__item" id="teste_botoes-item"><img src="/img/Compras.svg" alt="Imagem Carrinho de Compras"></li> 
+                        </ul>
+                            <a href="#" class="botoes__ancora">Saiba Mais</a>
+                    </div>
                 </div>
             </div>
 
@@ -225,14 +227,57 @@
             </section>
 
             <div class="novidades">
-                <h2 class="titulo__novidades">Fique atento nas novidades!</h2>
-                <p class="descricao__novidades">Atualizações de e-books, novos livros, promoções e outros.</p>
+                <div class="coluna-a">
+                    <h2 class="titulo__novidades">Fique atento nas novidades!</h2>
+                    <p class="descricao__novidades">Atualizações de e-books, novos livros, promoções e outros.</p>
+                </div>
 
-                <input type="search" class="banner__pesquisa-novidades" placeholder="Cadastre seu e-mail">
+                <div class="coluna-b">
+                    <input type="search" class="banner__pesquisa-novidades" placeholder="Cadastre seu e-mail">
+                </div>
             </div>
 
             <footer>
-                <h2 class="titulo__footer">Grupo Alura</h2>
+                <div class="container__footer">
+                    <div class="coluna-1">
+                        <h2 class="titulo__footer">Grupo Alura</h2>
+                    </div>
+
+                    <div class="coluna-2">
+                        <h3>Educação</h3>
+                            <ul class="lista-rodape">
+                                <a class="lista__rodape-link"><li class="lista__rodape-item"><img src="/img/Caelum.png" alt="imagem caelum" class="img-footer">Caelum</li></a>
+                                <a class="lista__rodape-link"><li class="lista__rodape-item"><img src="/img/CasaDoCodigo.png" alt="imagem casa do codigo" class="img-footer">Casa do Código</li></a>
+                            </ul>
+                    </div>
+
+                    <div class="coluna-3">
+                        <h3>Educação Online</h3>
+                        <ul class="lista-rodape">
+                            <a class="lista__rodape-link"><li class="lista__rodape-item"><img src="/img/Alura.png" alt="imagem alura" class="img-footer">Alura</li></a>
+                            <a class="lista__rodape-link"><li class="lista__rodape-item"><img src="/img/AluraEmpresas.png" alt="imagem alura empresas" class="img-footer">Alura para Empresas</li></a>
+                            <a class="lista__rodape-link"><li class="lista__rodape-item"><img src="/img/AluraLatam.png" alt="imagem alura latam" class="img-footer">Alura LATAM</li></a>
+                            <a class="lista__rodape-link"><li class="lista__rodape-item"><img src="/img/AluraStart.png" alt="imagem alura start" class="img-footer">Alura Start</li></a>
+                            <a class="lista__rodape-link"><li class="lista__rodape-item"><img src="/img/MusicDot.png" alt="imagem music dot" class="img-footer">Music Dot</li></a>
+                            <a class="lista__rodape-link"><li class="lista__rodape-item"><img src="/img/AluraLingua.png" alt="imagem alura lingua" class="img-footer">Alura Lingua</li></a>
+                            <a class="lista__rodape-link"><li class="lista__rodape-item"><img src="/img/PM3.png" alt="imagem pm3" class="img-footer">PM3</li></a>
+                        </ul>
+
+                    </div>
+
+                    <div class="coluna-4">
+                        <h3>Comunidade</h3>
+                        <ul class="lista-rodape">
+                            <a class="lista__rodape-link"><li class="lista__rodape-item"><img src="/img/HipstersTech.png" alt="imagem hipster tech" class="img-footer">Hipster ponto Tech</li></a>
+                            <a class="lista__rodape-link"><li class="lista__rodape-item"><img src="/img/Scuba.png" alt="imagem scuba dev" class="img-footer">Scuba Dev</li></a>
+                            <a class="lista__rodape-link"><li class="lista__rodape-item"><img src="/img/Layers.png" alt="imagem layers" class="img-footer">Layers ponto Tech</li></a>
+                            <a class="lista__rodape-link"><li class="lista__rodape-item"><img src="/img/LikeABoss.png" alt="imagem like a boss" class="img-footer">Like a boss</li></a>
+                            <a class="lista__rodape-link"><li class="lista__rodape-item"><img src="/img/CarreiraSemFronteira.png" alt="imagem carreira sem fronteiras" class="img-footer">Carreira sem Fronteira</li></a>
+                            <a class="lista__rodape-link"><li class="lista__rodape-item"><img src="/img/HipstersJobs.png" alt="imagem hipsters jobs" class="img-footer">Hipsters ponto Jobs</li></a>
+                            <a class="lista__rodape-link"><li class="lista__rodape-item"><img src="/img/GUJ.png" alt="imagem guj" class="img-footer">GUJ</li></a>
+                        </ul>
+                    </div>
+                </div>
             </footer>
 
 

@@ -1,3 +1,9 @@
+.container__card{
+    position: relative;
+    width: 100%; 
+    
+
+}
 .card{
     background: var(--branco);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -84,11 +90,15 @@
 }
 
 
+    @media screen and (min-width:1024px){
+        
+        .container__card{
+            position: relative;
+            width: 80%; 
+            margin: 5em 10% 3em 10%;
 
-
-
-
-
+        }
+    }
 
 
 

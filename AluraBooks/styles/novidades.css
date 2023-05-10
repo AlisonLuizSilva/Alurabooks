@@ -39,4 +39,22 @@
     text-align: center;
 }
 
-    
+    @media screen and (min-width: 1024px){
+        .coluna-a{
+            width: 45%;
+        }
+
+        .coluna-b{
+            width: 55%;
+        }
+        
+        .novidades{
+            display: flex;
+        }
+
+        .banner__pesquisa-novidades{
+            width: 80%;
+            margin: 10%;
+        }
+        
+    }
